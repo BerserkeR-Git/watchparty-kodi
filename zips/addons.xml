@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="service.watchparty" name="Watch Party" version="0.2.0" provider-name="Watch Party">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Watch together with friends: pause, play and skip in step</summary>
+        <description lang="en_GB">Watch Party keeps Plex playback in PM4K in step between friends on different TVs and computers. Start a watch party, invite people, and everyone starts together, pauses together and skips together. Needs a Watch Party server and a connection code from whoever runs it.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>resources/icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+<addon id="repository.watchparty" name="Watch Party Repository" version="1.0.0" provider-name="Watch Party">
+    <extension point="xbmc.addon.repository" name="Watch Party Repository">
+        <dir>
+            <info compressed="false">https://berserker-git.github.io/watchparty-kodi/zips/addons.xml</info>
+            <checksum>https://berserker-git.github.io/watchparty-kodi/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://berserker-git.github.io/watchparty-kodi/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Updates for Watch Party</summary>
+        <description lang="en_GB">Install this once. Kodi then keeps Watch Party up to date by itself.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+</addons>
