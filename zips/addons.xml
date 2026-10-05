@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="service.watchparty" name="Watch Party" version="0.2.1" provider-name="Watch Party">
+<addon id="service.watchparty" name="Watch Party" version="0.2.2" provider-name="Watch Party">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -9,8 +9,8 @@
         <provides>executable video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Watch together with friends: pause, play and skip in step</summary>
-        <description lang="en_GB">Watch Party keeps Plex playback in PM4K in step between friends on different TVs and computers. Start a watch party, invite people, and everyone starts together, pauses together and skips together. Needs a Watch Party server and a connection code from whoever runs it.</description>
+        <summary lang="en_GB">Synchronised Plex playback with friends in PM4K</summary>
+        <description lang="en_GB">Watch Party synchronises Plex playback in PM4K across devices, so friends in different places can watch together. Start a watch party and invite people: playback starts, pauses and skips for everyone at the same time. Requires a Watch Party server and a connection code from its administrator.</description>
         <platform>all</platform>
         <assets>
             <icon>resources/icon.png</icon>

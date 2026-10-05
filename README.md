@@ -1,7 +1,7 @@
 # Watch Party for Kodi
 
-Kodi repository for the Watch Party add-on. It holds only the packaged add-on; nothing here works without a
-Watch Party server and a connection code from whoever runs it.
+Kodi repository for the Watch Party add-on. It holds only the packaged add-on, which requires a Watch Party
+server and a connection code from its administrator.
 
 In Kodi:
 
