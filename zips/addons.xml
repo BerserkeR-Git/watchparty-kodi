@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="service.watchparty" name="Watch Party" version="0.3.5" provider-name="Watch Party">
+<addon id="service.watchparty" name="Watch Party" version="0.3.6" provider-name="Watch Party">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
