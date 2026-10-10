@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="service.watchparty" name="Watch Party" version="0.3.13" provider-name="Watch Party">
+<addon id="service.watchparty" name="Watch Party" version="0.3.14" provider-name="Watch Party">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -12,7 +12,12 @@
         <summary lang="en_GB">Synchronised Plex playback with friends in PM4K</summary>
         <description lang="en_GB">Watch Party synchronises Plex playback in PM4K across devices, so friends in different places can watch together. Start a watch party and invite people: playback starts, pauses and skips for everyone at the same time. Requires a Watch Party server and a connection code from its administrator.</description>
         <platform>all</platform>
-        <news>v0.3.13
+        <news>v0.3.14
+- A skip made with Kodi's own controls (the keyboard or a remote on a PC) is shared from where it goes. Kodi still reported the old time at that moment, so the skip was shared from where you had been and the others never moved.
+- A skip of your own seconds after Watch Party moved your player is no longer mistaken for Watch Party's own move.
+- Watch Party starts itself again after an unexpected error, instead of stopping until Kodi restarts, and its errors no longer reach Kodi as script errors.
+- Small fixes: a record of invitations kept growing, and a question that could not be shown kept a timer running.
+v0.3.13
 - An invitation left unanswered, or still on screen when Kodi closes, no longer counts as Not now, and no longer ends in "That invitation is no longer open" ten minutes later.
 - An invitation question closes by itself once the invitation is gone: joined on another of your devices, ended, or expired.
 - Invited again while the question is still open shows one question, not two.
