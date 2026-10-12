@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="service.watchparty" name="Watch Party" version="0.3.17" provider-name="Watch Party">
+<addon id="service.watchparty" name="Watch Party" version="0.3.18" provider-name="Watch Party">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -12,7 +12,14 @@
         <summary lang="en_GB">Synchronised Plex playback with friends in PM4K</summary>
         <description lang="en_GB">Watch Party synchronises Plex playback in PM4K across devices, so friends in different places can watch together. Start a watch party and invite people: playback starts, pauses and skips for everyone at the same time. Requires a Watch Party server and a connection code from its administrator.</description>
         <platform>all</platform>
-        <news>v0.3.17
+        <news>v0.3.18
+- Skipping several times in a row over a slow connection no longer sets every device skipping back and forth between earlier spots. Watch Party now recognises its own moves even when Kodi reports them seconds late.
+- No more "seconds behind" or "seconds ahead" offers right after a skip.
+- A skip Kodi reports late is shared from where your player really is, so everyone lands in step with you.
+- A device that cannot stop exactly where it is sent, such as a TV box, now starts from where it stopped once everyone has agreed to start there, instead of trying again and again.
+- Someone watching on several devices is named once, and one of those devices closing the video is said once instead of at every change.
+- A notice shown while the video was paused moves back up into the corner when it plays on, instead of staying lower.
+v0.3.17
 - A disconnected device now says it needs a new connection code from your Watch Party administrator, as the old one no longer works.
 v0.3.16
 - Pressing Join while Watch Party cannot be reached now says so, instead of nothing happening. The invitation waits in the Watch Party menu.
