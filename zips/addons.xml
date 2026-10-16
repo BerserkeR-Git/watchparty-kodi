@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="service.watchparty" name="Watch Party" version="0.3.23" provider-name="Watch Party">
+<addon id="service.watchparty" name="Watch Party" version="0.3.24" provider-name="Watch Party">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -12,7 +12,11 @@
         <summary lang="en_GB">Synchronised Plex playback with friends in PM4K</summary>
         <description lang="en_GB">Watch Party synchronises Plex playback in PM4K across devices, so friends in different places can watch together. Start a watch party and invite people: playback starts, pauses and skips for everyone at the same time. Requires a Watch Party server and a connection code from its administrator.</description>
         <platform>all</platform>
-        <news>v0.3.23
+        <news>v0.3.24
+- Pressing play right after a skip while you are the only one watching the title now keeps the watch party exactly where you are, so whoever opens the title later starts in step with you.
+- Skipping right after Watch Party moved your player no longer teaches it a wrong timing for your device, which could leave you slightly ahead of everyone after the next skip.
+- Invitations name everyone else invited as "Kim and Lee", and "Sam and Kim do not have access" reads correctly.
+v0.3.23
 - A skip made with Plex's own skip buttons while the party is paused or counting down keeps you with the party, instead of playing on ahead of everyone.
 - Pressing play while you are the only one on the title, as the connection drops, now starts the party from where you are once the connection is back, instead of pulling you back later.
 - With diagnostics on, Watch Party also notes how long each jump takes to settle, so a future version can follow skips faster.
